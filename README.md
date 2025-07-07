@@ -1,2 +1,2 @@
 # PROJECTS
-project ideas for beginners
+projects for beginners
