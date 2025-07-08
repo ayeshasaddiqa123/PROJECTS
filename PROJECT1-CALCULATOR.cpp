@@ -1,9 +1,11 @@
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
+#include<math.h>
 int sum1(int a);
 int differ(int );
 int div (int );
 int mul (int);
+int rem(int);
 int a;
 int main ()               // main function from where execution starts
 {
@@ -50,7 +52,12 @@ else if ( ch == '*')
    cin>>a;
   c=z*mul(a);
    }   
-   
+	else if(ch=='^')
+	{
+		cin>>a;
+		c=pow(z,a);
+	}
+      
 ch=cin.get(); 
 }
 cout<<c;
@@ -78,4 +85,10 @@ int mul (int)
 {
 static	int m=1;
 return m=m*a;
+}
+int pow( int a )
+{
+		static int pow=a;
+	return pow;
+	
 }
